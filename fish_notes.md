@@ -1,3 +1,19 @@
+#add a remote called origin (key)
+#allows me to push (and pull) commits to and from the remote
+git remote add origin URL
+
+#push the urrent branch (master) to branch (also master) on the origin remote
+#the first master refers to the local branch
+#the second master refers to the remote branch
+~/P/w/History master ✔ git push -u origin master
+
+# once the local master branch is connect to a remote branh,
+#i don't need to specif the remote or branch names
+~/P/w/History master ✔ git push
+
+# also shows the commit log of the local and remote branches
+git ll
+
 #initialize git repository(create a .git folder in the current working directory)
 git init
 
@@ -32,6 +48,8 @@ git log
 git ll
 
 # like git log, but extremely verbose
+#the only command tha shows the chnges
+# not built-in git, but an alias we added on day 1
 git la
 
 
